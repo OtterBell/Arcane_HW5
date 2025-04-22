@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct HW4App: App {
+struct ArcaneApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Tab("世界觀", systemImage: "globe.americas") {
+                WorldList()
+            }
+            Tab("主要角色", systemImage: "person.fill") {
+                CharaList()
+            }
+            Tab("劇透", systemImage: "book.pages") {
+                SeriesList()
+            }
         }
-        .padding()
+        .accentColor(.green)
     }
 }
 
